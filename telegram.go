@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	goservice "github.com/baozhenglab/go-sdk"
+	goservice "github.com/baozhenglab/go-sdk/v2"
 )
 
 type telegramService struct {
