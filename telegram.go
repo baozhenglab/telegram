@@ -62,6 +62,7 @@ func (telegram *telegramService) SendMessage(form map[string]string) error {
 	if err != nil {
 		return err
 	}
+	req.Header.Add("Content-Type","application/json")
 	response, err := client.Do(req)
 	if err != nil {
 		return err
